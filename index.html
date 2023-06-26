@@ -19,26 +19,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <style>
 
-/* inter-300 - latin */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: local(''),
-       url('fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/inter-v12-latin-300.woff2') format('woff2'),
+       url('fonts/inter-v12-latin-300.woff') format('woff');
 }
 
-/* inter-400 - latin */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
+       url('fonts/inter-v12-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -47,8 +45,8 @@
   font-weight: 500;
   font-display: swap;
   src: local(''),
-       url('fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/inter-v12-latin-500.woff2') format('woff2'),
+       url('fonts/inter-v12-latin-500.woff') format('woff');
 }
 @font-face {
   font-family: 'Inter';
@@ -56,8 +54,41 @@
   font-weight: 700;
   font-display: swap;
   src: local(''),
-       url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/inter-v12-latin-700.woff2') format('woff2'),
+       url('fonts/inter-v12-latin-700.woff') format('woff');
+}
+
+#imagePopupprevsatu,#imagePopupprevdua,#imagePopupprevtiga,#imagePopupprevempat,#imagePopupprevlima,#imagePopupprevenam,#imagePopupprevtujuh,#imagePopupprevdelapan,#imagePopupprevsembilan,#imagePopupprevsepuluh {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#imagePopupprevsatu.show,#imagePopupprevdua.show,#imagePopupprevtiga.show,#imagePopupprevempat.show,#imagePopupprevlima.show,#imagePopupprevenam.show,#imagePopupprevtujuh.show,#imagePopupprevdelapan.show,#imagePopupprevsembilan.show,#imagePopupprevsepuluh.show {
+  display: block;
+}
+
+#previewImage {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close1,.close2,.close3,.close4,.close5,.close6,.close7,.close8,.close9,.close10 {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 </style>
@@ -208,76 +239,12 @@
     </div>
 
     </div>
-    <div class="container-fluid px-vw-5 position-relative" data-aos="fade" style="background-color: black;">
-    <div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
-    <div class="position-relative py-vh-5 bg-cover bg-center rounded-5" style="background-color: yellow">
-      <div class="container bg-white px-vw-5 py-vh-3 rounded-5 shadow">
-      <div class="row d-flex align-items-center"><h1 class="text-center">BEST PROJECT</h1><span class="h5 text-secondary fw-lighter text-center"><br><img src="./img/gbr2.png" alt=""></span></div>
-    </div>
-      </div>
-    </div>
 
     </div>
     </div>
     <div class="bg-dark py-vh-5">
     <div class="container px-vw-5">
       <div class="row d-flex gx-5 align-items-center">
-        <div class="col-12 col-lg-6">
-          <div class="rounded-5 bg-black p-5 shadow row" data-aos="zoom-in-right">
-            <div class="fs-1">
-            </div>
-            <div class="col-6">
-              <p class="text-secondary lead">BASIC</p>
-            <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-              <div>
-                <ul>
-                  <li>15 Post content/Month</li>
-                  <li>Video production</li>
-                  <li>Concept request included</li>
-                  <li>Best hastag content</li>
-                  <li>Creative concept</li>
-                  <li>Content ideas/Content material</li>
-                  <li>Comment reply management</li>
-                  <li>Direct Message handling</li>
-                  <li>Monthly report</li>
-                  <li>Admin content post</li>
-                  <li>Post everyday</li>
-                  <li>Consep feed layout</li>
-                  <li>Revisi (Minor) 2x</li>
-                </ul>
-              </div>
-            </div>
-            </div>
-            <div class="col-6">
-              <p class="text-secondary lead">PROFESIONAL</p>
-            <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-              <div>
-                <ul>
-                  <li>30 Post content/Month</li>
-                  <li>Video production</li>
-                  <li>Concept request included</li>
-                  <li>Best hastag content</li>
-                  <li>Creative concept</li>
-                  <li>Content ideas/Content material</li>
-                  <li>Comment reply management</li>
-                  <li>Direct Message handling</li>
-                  <li>Monthly report</li>
-                  <li>Admin content post</li>
-                  <li>Post everyday</li>
-                  <li>Consep feed layout</li>
-                  <li>Revisi (Minor) 2x</li>
-                </ul>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="p-5 pt-0" data-aos="fade">
-            <span class="h5 text-secondary fw-lighter">TIKTOK/REELS Non Live Video</span>
-            <h2 class="display-4">SOCIAL MEDIA MANAGEMENT</h2>
-          </div>
-        </div>
         <div class="col-12 col-lg-6">
           <div class="p-5 pt-0" data-aos="fade">
             <span class="h5 text-secondary fw-lighter">TIKTOK/REELS with LIVE Video</span>
@@ -337,7 +304,83 @@
         
       </div>
     </div>
+    <div class="bg-black">
+      <div class="container px-vw-5 py-vh-5">
+        <div class="row d-flex align-items-center">
+          <h2 class="text-center">OUR PROJECT</h2>
+          <div class="col-12 col-lg-2 bg-dark rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
+            <button id="prevsatu" class="btn btn-xl btn-light mb-2">Dapur buntut PIK</button>
+            <button id="prevdua" class="btn btn-xl btn-light mb-2">Maria Clara Gabriela Couture</button>
+            <button id="prevtiga" class="btn btn-xl btn-light mb-2">Cressenta</button>
+            <button id="prevempat" class="btn btn-xl btn-light mb-2">Raina Ardelia Fashion Designer</button>
+            <button id="prevlima" class="btn btn-xl btn-light mb-2">Sergio Shisa</button>
+            <button id="prevenam" class="btn btn-xl btn-light mb-2">Durian Palace</button>
+            <button id="prevtujuh" class="btn btn-xl btn-light mb-2">Great Giant Family</button>
+            <button id="prevdelapan" class="btn btn-xl btn-light mb-2">Miebar</button>
+            <button id="prevsembilan" class="btn btn-xl btn-light mb-2">Steak 21</button>
+            <button id="prevsepuluh" class="btn btn-xl btn-light mb-2">Pipiltin Cocoa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="imagePopupprevsatu">
+      <span class="close1">&times;</span>
+        <!-- <img id="previewImage" src="./img/gbr1.png" alt="Preview Image"> -->
+    </div>
 
+    <div id="imagePopupprevdua">
+      <span class="close2">&times;</span>
+        <img id="previewImage" src="./img/maria1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/maria2.png" alt="Preview Image">
+    </div>
+    <div id="imagePopupprevtiga">
+      <span class="close3">&times;</span>
+        <img id="previewImage" src="./img/cresenta1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/cresenta2.png" alt="Preview Image">
+    </div>
+    <div id="imagePopupprevempat">
+      <span class="close4">&times;</span>
+        <img id="previewImage" src="./img/raina1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/raina2.png" alt="Preview Image">
+    </div>
+    <div id="imagePopupprevlima">
+      <span class="close5">&times;</span>
+        <img id="previewImage" src="./img/sergio1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/sergio2.png" alt="Preview Image">
+    </div>
+    <div id="imagePopupprevenam">
+      <span class="close6">&times;</span>
+        <img id="previewImage" src="./img/durian1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/cresenta2.png" alt="Preview Image">
+    </div>
+    <div id="imagePopupprevtujuh">
+      <span class="close7">&times;</span>
+        <img id="previewImage" src="./img/great1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/great2.png" alt="Preview Image">
+    </div>
+    <div id="imagePopupprevdelapan">
+      <span class="close8">&times;</span>
+        <!-- <img id="previewImage" src="./img/cresenta1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/cresenta2.png" alt="Preview Image"> -->
+    </div>
+    <div id="imagePopupprevsembilan">
+      <span class="close9">&times;</span>
+        <img id="previewImage" src="./img/stik1.png" alt="Preview Image">
+    </div>
+    <div id="imagePopupprevsepuluh">
+      <span class="close10">&times;</span>
+        <!-- <img id="previewImage" src="./img/cresenta1.png" alt="Preview Image">
+        <img id="previewImage" src="./img/cresenta2.png" alt="Preview Image"> -->
+    </div>
+    
+    <div class="container-fluid px-vw-5 position-relative" data-aos="fade" style="background-color: black;">
+      <div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
+        <div class="position-relative py-vh-5 bg-cover bg-center rounded-5" style="background-color: yellow">
+          <div class="container bg-white px-vw-5 py-vh-3 rounded-5 shadow">
+          <div class="row d-flex align-items-center"><h1 class="text-center">BEST PROJECT</h1><span class="h5 text-secondary fw-lighter text-center"><br><img src="./img/gbr2.png" alt=""></span></div>
+        </div>
+      </div>
+    </div>
     </div>
   </main>
 
@@ -356,14 +399,6 @@
     </div>
   </div>
 </footer>
-
-
-
-
-
-
-
-
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/aos.js"></script>
 
@@ -373,6 +408,113 @@ AOS.init({
 });
 </script>
 <script>
+ const prevsatu = document.getElementById("prevsatu");
+ const prevdua = document.getElementById("prevdua");
+ const prevtiga = document.getElementById("prevtiga");
+ const prevempat = document.getElementById("prevempat");
+ const prevlima = document.getElementById("prevlima");
+ const prevenam = document.getElementById("prevenam");
+ const prevtujuh = document.getElementById("prevtujuh");
+ const prevdelapan = document.getElementById("prevdelapan");
+ const prevsembilan = document.getElementById("prevsembilan");
+ const prevsepuluh = document.getElementById("prevsepuluh");
+
+const imagePopupprevsatu = document.getElementById("imagePopupprevsatu");
+const imagePopupprevdua = document.getElementById("imagePopupprevdua");
+const imagePopupprevtiga = document.getElementById("imagePopupprevtiga");
+const imagePopupprevempat = document.getElementById("imagePopupprevempat");
+const imagePopupprevlima = document.getElementById("imagePopupprevlima");
+const imagePopupprevenam = document.getElementById("imagePopupprevenam");
+const imagePopupprevtujuh = document.getElementById("imagePopupprevtujuh");
+const imagePopupprevdelapan = document.getElementById("imagePopupprevdelapan");
+const imagePopupprevsembilan = document.getElementById("imagePopupprevsembilan");
+const imagePopupprevsepuluh = document.getElementById("imagePopupprevsepuluh");
+
+const previewImage = document.getElementById("previewImage");
+const closePopup = document.querySelector(".close1");
+const closePopup2 = document.querySelector(".close2");
+const closePopup3 = document.querySelector(".close3");
+const closePopup4 = document.querySelector(".close4");
+const closePopup5 = document.querySelector(".close5");
+const closePopup6 = document.querySelector(".close6");
+const closePopup7 = document.querySelector(".close7");
+const closePopup8 = document.querySelector(".close8");
+const closePopup9 = document.querySelector(".close9");
+const closePopup10 = document.querySelector(".close10");
+
+
+prevsatu.addEventListener("click", function() {
+  imagePopupprevsatu.classList.add("show");
+});
+
+prevdua.addEventListener("click", function() {
+  imagePopupprevdua.classList.add("show");
+});
+
+prevtiga.addEventListener("click", function() {
+  imagePopupprevtiga.classList.add("show");
+});
+
+prevempat.addEventListener("click", function() {
+  imagePopupprevempat.classList.add("show");
+});
+
+prevlima.addEventListener("click", function() {
+  imagePopupprevlima.classList.add("show");
+});
+
+prevenam.addEventListener("click", function() {
+  imagePopupprevenam.classList.add("show");
+});
+
+prevtujuh.addEventListener("click", function() {
+  imagePopupprevtujuh.classList.add("show");
+});
+
+prevdelapan.addEventListener("click", function() {
+  imagePopupprevdelapan.classList.add("show");
+});
+
+prevsembilan.addEventListener("click", function() {
+  imagePopupprevsembilan.classList.add("show");
+});
+
+prevsepuluh.addEventListener("click", function() {
+  imagePopupprevsepuluh.classList.add("show");
+});
+
+closePopup.addEventListener("click", function() {
+  imagePopupprevsatu.classList.remove("show");
+});
+
+closePopup2.addEventListener("click", function() {
+  imagePopupprevdua.classList.remove("show");
+});
+closePopup3.addEventListener("click", function() {
+  imagePopupprevtiga.classList.remove("show");
+});
+closePopup4.addEventListener("click", function() {
+  imagePopupprevempat.classList.remove("show");
+});
+closePopup5.addEventListener("click", function() {
+  imagePopupprevlima.classList.remove("show");
+});
+closePopup6.addEventListener("click", function() {
+  imagePopupprevenam.classList.remove("show");
+});
+closePopup7.addEventListener("click", function() {
+  imagePopupprevtujuh.classList.remove("show");
+});
+closePopup8.addEventListener("click", function() {
+  imagePopupprevdelapan.classList.remove("show");
+});
+closePopup9.addEventListener("click", function() {
+  imagePopupprevsembilan.classList.remove("show");
+});
+closePopup10.addEventListener("click", function() {
+  imagePopupprevsepuluh.classList.remove("show");
+});
+
   let scrollpos = window.scrollY
   const header = document.querySelector(".navbar")
   const header_height = header.offsetHeight
